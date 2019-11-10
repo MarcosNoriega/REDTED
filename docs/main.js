@@ -38,6 +38,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
 /* harmony import */ var _components_teorico_teorico_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/teorico/teorico.component */ "./src/app/components/teorico/teorico.component.ts");
+/* harmony import */ var _components_info_info_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/info/info.component */ "./src/app/components/info/info.component.ts");
+
 
 
 
@@ -46,6 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: 'home', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'teorico/:id', component: _components_teorico_teorico_component__WEBPACK_IMPORTED_MODULE_4__["TeoricoComponent"] },
+    { path: 'info', component: _components_info_info_component__WEBPACK_IMPORTED_MODULE_5__["InfoComponent"] },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -137,6 +140,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/shared/navbar/navbar.component */ "./src/app/components/shared/navbar/navbar.component.ts");
 /* harmony import */ var _components_teorico_teorico_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/teorico/teorico.component */ "./src/app/components/teorico/teorico.component.ts");
 /* harmony import */ var _components_card_card_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/card/card.component */ "./src/app/components/card/card.component.ts");
+/* harmony import */ var _components_info_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/info/info.component */ "./src/app/components/info/info.component.ts");
+
 
 
 
@@ -156,7 +161,8 @@ var AppModule = /** @class */ (function () {
                 _components_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
                 _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"],
                 _components_teorico_teorico_component__WEBPACK_IMPORTED_MODULE_7__["TeoricoComponent"],
-                _components_card_card_component__WEBPACK_IMPORTED_MODULE_8__["CardComponent"]
+                _components_card_card_component__WEBPACK_IMPORTED_MODULE_8__["CardComponent"],
+                _components_info_info_component__WEBPACK_IMPORTED_MODULE_9__["InfoComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -261,6 +267,50 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/info/info.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/components/info/info.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container mt-4 animated fadeIn\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <div class=\"jumbotron bg-dark\">\n\n        <h1>\n          Sobre el software\n        </h1>\n\n        <hr>\n\n\n        <h4>\n          Destinatario del Software:\n        </h4>\n\n        <p> El software educativo está destinado a la captación laboras determinada en esto se realiza la distinta\n          capacitación y posterior empleo en periodo de prueba.</p>\n\n        <p>También es necesario tener cierto nivel de conocimiento en redes de información para el uso de este software</p>\n\n        <h4>Tecnologías usadas en el software:</h4>\n\n        <p>Este software está construido con el motor grafico de videojuegos Unity 3d junto con el lenguaje de\n          programación c#.</p>\n          <p>Gracias a unity pudimos realizar un software con características lúdicas permitiendo al usuario tener mayor interacción con el mismo a través de actividades prácticas.</p>\n\n\n          <h4>\n              Equipo de desarrollo:\n            </h4>\n\n            <p>El equipo de desarrollo que hizo posible la creación de este proyecto esta conformado por: </p>\n            <ul>\n              <li>Blanco Leonardo</li>\n              <li>Noriega Marcos</li>\n            </ul>\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/info/info.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/info/info.component.ts ***!
+  \***************************************************/
+/*! exports provided: InfoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InfoComponent", function() { return InfoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var InfoComponent = /** @class */ (function () {
+    function InfoComponent() {
+    }
+    InfoComponent.prototype.ngOnInit = function () {
+    };
+    InfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-info',
+            template: __webpack_require__(/*! ./info.component.html */ "./src/app/components/info/info.component.html")
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], InfoComponent);
+    return InfoComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/shared/navbar/navbar.component.html":
 /*!****************************************************************!*\
   !*** ./src/app/components/shared/navbar/navbar.component.html ***!
@@ -268,7 +318,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">REDTEC</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" [routerLink]=\"['home']\">Home</a>\n      </li>\n      <li class=\"nav-item dropdown\" activeRouterLink=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Contenidos Téorico\n        </a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/1']\">CONFIGURACIÓN DE LA NORMA T568 A y T568 B</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/3']\">Topologías de redes</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/7']\">Topología de bus</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/5']\">Topología de estrella</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/8']\">Topología en anillo</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/6']\">Topología de árbol</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/4']\">Topología de malla</a>\n        </div>\n      </li>\n    </ul>\n  </div>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">REDTEC</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" [routerLink]=\"['home']\">Home</a>\n      </li>\n      <li class=\"nav-item dropdown\" activeRouterLink=\"active\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Contenidos Téorico\n        </a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/1']\">CONFIGURACIÓN DE LA NORMA T568 A y T568 B</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/3']\">Topologías de redes</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/7']\">Topología de bus</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/5']\">Topología de estrella</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/8']\">Topología en anillo</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/6']\">Topología de árbol</a>\n          <a class=\"dropdown-item\" [routerLink]=\"['teorico/4']\">Topología de malla</a>\n        </div>\n      </li>\n\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" [routerLink]=\"['info']\">Info</a>\n      </li>\n    </ul>\n  </div>\n</nav>"
 
 /***/ }),
 
