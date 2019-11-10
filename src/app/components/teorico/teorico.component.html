@@ -1,0 +1,232 @@
+<div class="container mt-4 animated fadeIn">
+  <div [ngSwitch]="teorico">
+    <div *ngSwitchCase="1">
+        <div class="row">
+            <div class="col">
+              <div class="card bg-dark">
+                <div class="card-header">
+                  <h1>CONFIGURACIÓN DE LA NORMA T568 A y T568 B</h1>
+        
+                </div>
+        
+                <div class="card-body">
+                  <p>La norma principal, TIA/EIA-568-B.1 define los requisitos generales, mientras que-568-B.2 se centra en los
+                    componentes de los sistemas de cable balanceado de par trenzado y-568-B.3 aborda componentes de los
+                    sistemas de cable de fibra óptica.</p>
+                  <p>La norma EIA/TIA 568¬A específica los requerimientos mínimos para el cableado de establecimientos
+                    comerciales de oficinas. Se hacen recomendaciones para:
+                    <ul>
+                      <li>Las topología</li>
+                      <li>La distancia máxima de los cables</li>
+                      <li>El rendimiento de los componentes</li>
+                      <li>Las tomas y los conectores de telecomunicaciones</li>
+                    </ul>
+        
+        
+                    <p>El cableado estructurado para redes de computadores nombran dos tipos de normas o configuraciones a
+                      seguir, estas son: La EIA/TIA-568A (T568A) y la EIA/TIA-568B (T568B).</p>
+        
+                    <p>La diferencia entre ellas
+                      es el orden de los colores
+                      de los pares a seguir para
+                      el conector RJ45.
+                      Las redes de computadores no utilizan los 4 pares (8 cables) en su totalidad, utilizan solamente 4
+                      cables: 2 para transmitir y 2 para recibir.</p>
+
+                      <iframe width="853" height="480" src="https://www.youtube.com/embed/glPc_yB9-I0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div *ngSwitchCase="3">
+        <div class="row">
+            <div class="col">
+              <div class="card bg-dark">
+                <div class="card-header">
+                  <h1>Topologías de redes</h1>
+        
+                </div>
+        
+                <div class="card-body">
+                  <p>El término topología se refiere a la forma en que está diseñada la red, bien físicamente (rigiéndose de
+                    algunas características en su hardware) o bien lógicamente (basándose en las características internas de su
+                    software). La topología de red es la representación geométrica de la relación entre todos los enlaces y los
+                    dispositivos que los enlazan entre sí (habitualmente denominados nodos).</p>
+                  <p>Una red informática está compuesta por equipos que están conectados entre sí mediante líneas de
+                    comunicación (cables de red, etc.) y elementos de hardware (adaptadores de red y otros equipos que
+                    garantizan que los datos viajen correctamente). La configuración física, es decir la configuración espacial
+                    de la red, se denomina topología física. Los diferentes tipos de topología son:</p>
+                  <ul>
+                    <li>Topología de bus</li>
+                    <li>Topoligía de estrella</li>
+                    <li>Topoligía en anillo</li>
+                    <li>Topoligía de árbol</li>
+                    <li>Topoligía de malla</li>
+                  </ul>
+        
+                  <p>La topología lógica, a diferencia de la topología física, es la manera en que los datos viajan por las
+                    líneas de comunicación. Las topologías lógicas más comunes son Ethernet, Red en anillo y FDDI.</p>
+
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/awLJkNHBoms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div *ngSwitchCase="4">
+        <div class="row">
+            <div class="col">
+              <div class="card bg-dark">
+                <div class="card-header">
+                  <h1>Topología en Malla</h1>
+        
+                </div>
+        
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-8">
+                        <p>En una topología en malla, cada dispositivo tiene un enlace punto a punto y dedicado con cualquier otro
+                            dispositivo. El término dedicado significa que el enlace conduce el tráfico únicaniente entre los dos
+                            dispositivos que conecta.</p>
+                          <p>Por tanto, una red en malla completamente conectada necesita n(n-1)/2 canales fisicos para enlazar n
+                            dispositivos. Para acomodar tantos enlaces, cada dispositivo de la red debe tener sus puertos de
+                            entrada/salida (E/S).</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/img/red-malla.jpg" alt="">
+                    </div>
+                  </div>
+                  
+                  <p>Una malla ofrece varias ventajas sobre otras topologías de red. En primer lugar, el uso de los enlaces
+                    dedicados garantiza que cada conexión sólo debe transportar la carga de datos propia de los dispositivos
+                    conectados, eliminando el problema que surge cuando los enlaces son compartidos por varios dispositivos. En
+                    segundo lugar, una topología en malla es robusta. Si un enlace falla, no inhabilita todo el sistema.</p>
+                  <p>Otra ventaja es la privacidad o la seguridad. Cuando un mensaje viaja a través de una línea dedicada,
+                    solamente lo ve el receptor adecuado. Las fronteras fisicas evitan que otros usuarios puedan tener acceso a
+                    los mensajes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div *ngSwitchCase="5">
+        <div class="row">
+            <div class="col">
+              <div class="card bg-dark">
+                <div class="card-header">
+                  <h1>Topología en Estrella</h1>
+        
+                </div>
+        
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-8">
+                        <p>En la topología en estrella cada dispositivo solamente tiene un enlace punto a punto dedicado con el
+                            controlador central, habitualmente llamado concentrador. Los dispositivos no están directamente enlazados
+                            entre sí</p>
+                          <p>A diferencia de la topología en malla, la topología en estrella no permite el tráfico directo de
+                            dispositivos. El controlador actúa como un intercambiador: si un dispositivo quiere enviar datos a otro,
+                            envía los datos al controlador, que los retransmite al dispositivo final.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <img src="assets/img/Red-Estrella.png" alt="">
+                    </div>
+                  </div>
+                  <p>Una topología en estrella es más barata que una topología en malla. En una red de estrella, cada
+                    dispositivo necesita solamente un enlace y un puerto de entrada/salida para conectarse a cualquier número
+                    de dispositivos.</p>
+                  <p>Este factor hace que también sea más fácil de instalar y reconfigurar. Además, es necesario instalar menos
+                    cables, y la conexión, desconexión y traslado de dispositivos afecta solamente a una conexión: la que
+                    existe entre el dispositivo y el concentrador.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div *ngSwitchCase="6">
+        <div class="row">
+            <div class="col">
+              <div class="card bg-dark">
+                <div class="card-header">
+                  <h1>Topología en Árbol</h1>
+        
+                </div>
+        
+                <div class="card-body">
+                  <p>La topología en árbol es una variante de la de estrella. Como en la estrella, los nodos del árbol están
+                    conectados a un concentrador central que controla el tráfico de la red. Sin embargo, no todos los
+                    dispositivos se conectan directamente al concentrador central. La mayoría de los dispositivos se conectan a
+                    un concentrador secundario que, a su vez, se conecta al concentrador central.</p>
+                  <p>El controlador central del árbol es un concentrador activo. Un concentrador activo contiene un repetidor,
+                    es decir, un dispositivo hardware que regenera los patrones de bits recibidos antes de retransmitidos.</p>
+                  <p>Retransmitir las señales de esta forma amplifica su potencia e incrementa la distancia a la que puede
+                    viajar la señal. Los concentradores secundarios pueden ser activos o pasivos. Un concentrador pasivo
+                    proporciona solamente una conexión fisica entre los dispositivos conectados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div *ngSwitchCase="7"><div class="row">
+        <div class="col">
+          <div class="card bg-dark">
+            <div class="card-header">
+              <h1>Topología en Bus</h1>
+    
+            </div>
+    
+            <div class="card-body">
+              <p>Una topología de bus es multipunto. Un cable largo actúa como una red troncal que conecta todos los
+                dispositivos en la red.</p>
+              <p>Los nodos se conectan al bus mediante cables de conexión (latiguillos) y sondas. Un cable de conexión es
+                una conexión que va desde el dispositivo al cable principal. Una sonda es un conector que, o bien se
+                conecta al cable principal, o se pincha en el cable para crear un contacto con el núcleo metálico.</p>
+              <p>Entre las ventajas de la topología de bus se incluye la sencillez de instalación. El cable troncal puede
+                tenderse por el camino más eficiente y, después, los nodos se pueden conectar al mismo mediante líneas de
+                conexión de longitud variable. De esta forma se puede conseguir que un bus use menos cable que una malla,
+                una estrella o una topología en árbol.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="8"> <div class="row">
+        <div class="col">
+          <div class="card bg-dark">
+            <div class="card-header">
+              <h1>Topología en Anillo</h1>
+    
+            </div>
+    
+            <div class="card-body">
+              <p>En una topología en anillo cada dispositivo tiene una línea de conexión dedicada y punto a punto solamente
+                con los dos dispositivos que están a sus lados. La señal pasa a lo largo del anillo en una dirección, o de
+                dispositivo a dispositivo, hasta que alcanza su destino. Cada dispositivo del anillo incorpora un
+                repetidor.</p>
+              <p>Un anillo es relativamente fácil de instalar y reconfigurar. Cada dispositivo está enlazado solamente a
+                sus vecinos inmediatos (bien fisicos o lógicos). Para añadir o quitar dispositivos, solamente hay que mover
+                dos conexiones.</p>
+              <p>Las únicas restricciones están relacionadas con aspectos del medio fisico y el tráfico (máxima longitud
+                del anillo y número de dispositivos). Además, los fallos se pueden aislar de forma sencilla. Generalmente,
+                en un anillo hay una señal en circulación continuamente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+ 
+</div>
